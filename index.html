@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div>
+        <form action="index.html" method="get">
+            <h1><label for="formulario">Formulario</label></h1>
+            <div>
+                <h3><label for="nombre">Nombre</label></h3>
+                <input type="text" id="name" name="Nombre" pattern="[a-zA-Z]+"required/>
+            </div>
+            <hr>
+            <div>
+                <h3><label for="apellido">Apellido</label></h3>
+                <input type="text" id="apellido" apellido="Apellido" pattern="[a-z]+"required />
+            </div>
+            <hr>
+            <div>
+                <h3><label for="color">Color</label></h3>
+                <input type="color">
+            </div>
+            <hr>
+            <div>
+                <h3><label for="edad">Edad</label></h3>
+                <input type="number" value="0" id="edad" name="numero" min="0">
+            </div>
+            <hr>
+            <div>
+                <h3><label for="números">Números</label></h3>
+                <input type="number" placeholder="123" pattern="^[0-9]"required> 
+            </div>
+            <hr>
+            <div>
+                <h3><label for="positivos">Positivos</label></h3>
+                <input type="number"pattern="^[0-9]" min="1" required> 
+            </div>
+            <hr>
+            <div>
+                <h3><label for="Max-Min">Maximo-Minimo</label></h3>
+                <input type="number" step="0.5" min="10" max="20" required>
+            </div>
+            <hr>
+            <div>
+                <h3><label for="fechaN">Fecha Nacimiento</label></h3>
+                <input type="date" required>
+            </div>
+            <hr>
+            <div>
+                <h3><label for="hora">Hora</label></h3>
+                <input type="time">
+            </div>
+            <hr>
+            <div>
+                <h3><label for="ciudad">Ciudad</label></h3>
+                <label for="ciudad">Seleccione la ciudad</label>
+                            <select name="ciudad" id="ciudad">
+                                <option value="">Seleccione</option>
+                                <option value="1">Bucaramanga</option>
+                                <option value="2">Giron</option>
+                            </select> 
+            </div>
+            <hr>
+            <div>
+                <h3><label for="genero">Genero</label></h3>
+                <select name="genero" id="genero">
+                    <option value="">Seleccione</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select>
+             </div>
+             <hr>
+            <div>
+                <h3><label for="materias">Materias</label></h3>
+                <label for="materias">Seleccione la materia</label>
+                            <select name="materias" id="materia">
+                                <option value="">Seleccione</option>
+                                <option value="1">HTML</option>
+                                <option value="2">CSS</option>
+                                <option value="3">JS</option>
+                                <option value="4">JAVA</option>
+                                <option value="5">PYTHON</option>
+                                <option value="6">PHP</option>
+                            </select>
+            </div>
+            <hr>
+            <div>
+                <h3><label for="archivo">Archivos</label></h3>
+                <input type="file" id="archivo" name="archivo" accept=".jpn, .png" multiple> 
+            </div>
+            <hr>
+            <div>
+                <h3><label for="contraseña">Contraseña</label></h3>
+                <input type="password" placeholder="abc#123" id="contrasena"> 
+            </div>
+            <hr>
+            <div>
+                <h3><label for="aprendiz">Aprendiz</label></h3>
+                <label for="name">Wendy Vera</label>
+            </div>
+        </form>
+        </div>
+        <hr>
+        <button type="submit">Enviar</button>
+    </section>
+</body>
+</html>
